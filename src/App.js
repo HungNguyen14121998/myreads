@@ -32,6 +32,7 @@ function App() {
       const getBooks = async () => {
         const res = await BooksAPI.getAll();
         setBooks(res);
+        localStorage.setItem("books", JSON.stringify(res));
       };
 
       getBooks();
