@@ -21,7 +21,7 @@ const Book = ({ book, onUpdateBook }) => {
 
   return (
     <div className="book-card">
-      <img src={`${book.imageLinks.thumbnail}`} width={140} height={180} />
+      <img src={`${book?.imageLinks?.thumbnail}`} width={140} height={180} />
       <br></br>
       <b>{book.title}</b>
       <br></br>
